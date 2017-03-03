@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+//const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -24,20 +24,23 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.js?$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader'
+            test:       /\.js?$/,
+            exclude:    /node_modules/,
+            loader:     'babel-loader'
         }, {
-            test: /\.scss$/,
-            loader: ['style-loader', 'css-loader', 'sass-loader'],
+            test:       /\.scss$/,
+            loader:     ['style-loader', 'css-loader', 'sass-loader'],
             // loader: ExtractTextPlugin.extract({
             //     fallback: 'style-loader',
             //     use: ['css-loader', 'sass-loader']
             // })
+        }, {
+            test:       /\.(png|jpg|svg|gif|ttf|eot|woff|woff2)$/,
+            loader:     'file?name=[name].[ext]?[hash]'
         }]
     },
     plugins: [
-        new ExtractTextPlugin("./css/style.css"),
+        //new ExtractTextPlugin("./css/style.css?[hash]"),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
     ]
