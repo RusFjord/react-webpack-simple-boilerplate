@@ -1,5 +1,6 @@
 $main-background: aliceblue;
 $primary-color: #3F51B5;
+$primary-color-dark: #1A237E;
 
 body {
   background-color: $main-background;
@@ -9,5 +10,21 @@ body {
 
 header {
   background-color: $primary-color;
-  height: 200px;
+  height: 400px;
+}
+
+nav {
+  background-color: $primary-color-dark;
+  height: 60px;
+  ul {
+    list-style-type: none;
+  }
+}
+
+
+
+.nav-item {
+  color: aliceblue;
+  float: left;
+  margin-right: 5px;
 }
