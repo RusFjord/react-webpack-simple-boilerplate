@@ -1,12 +1,18 @@
 {
   "name": "react-webpack-simple-boilerplate",
   "version": "1.0.0",
+  "description": "Very simple boilerplate for react",
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-loader": "^6.3.2",
     "babel-preset-es2015": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-0": "^6.22.0",
+    "css-loader": "^0.26.2",
+    "extract-text-webpack-plugin": "^2.0.0",
+    "node-sass": "^4.5.0",
+    "sass-loader": "^6.0.2",
+    "style-loader": "^0.13.2",
     "webpack": "latest"
   },
   "dependencies": {
@@ -14,13 +20,13 @@
     "react-dom": "^15.4.2"
   },
   "author": {
-    "name" : "Fedor Endovitskiy"
-  , "email" : "f.endovitskiy@ulteam8.ru"
-  , "url" : "http://ulteam8.ru/"
+    "name": "Fedor Endovitskiy",
+    "email": "f.endovitskiy@ulteam8.ru",
+    "url": "http://ulteam8.ru/"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/RusFjord/react-webpack-simple-boilerplate.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RusFjord/react-webpack-simple-boilerplate.git"
   },
   "license": "MIT"
 }
