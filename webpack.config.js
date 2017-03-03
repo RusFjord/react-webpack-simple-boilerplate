@@ -9,6 +9,7 @@ module.exports = {
         path: path.resolve('public/'),
         filename: 'js/build.js'
     },
+    watch: true,
     module: {
         loaders: [{
             test: /\.js?$/,
@@ -16,10 +17,8 @@ module.exports = {
             loader: 'babel-loader'
         }, {
             test: /\.scss$/,
-            //loader: 'style-loader!css-loader!sass-loader'
             loader: ExtractTextPlugin.extract({
                 fallback: 'style-loader',
-                //resolve-url-loader may be chained before sass-loader if necessary
                 use: ['css-loader', 'sass-loader']
             })
         }]

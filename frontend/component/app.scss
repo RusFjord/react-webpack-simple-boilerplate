@@ -1,7 +1,13 @@
 $main-background: aliceblue;
+$primary-color: #3F51B5;
 
 body {
   background-color: $main-background;
   margin: 0;
   padding: 0;
+}
+
+header {
+  background-color: $primary-color;
+  height: 200px;
 }
