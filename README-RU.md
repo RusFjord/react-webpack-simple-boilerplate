@@ -1,5 +1,7 @@
 #react-webpack-simple-boilerplate
 
+![rwsb.png](https://yadi.sk/i/n3gx6OsR3F2qJ6)
+
 [Лицензия MIT](https://github.com/RusFjord/react-webpack-simple-boilerplate/blob/master/LICENSE-RU)
 
 Это простой шаблон включает в себя базовые настройки для сборки фронтенд проекта с использованием библиотек:
