@@ -1,6 +1,6 @@
 #react-webpack-simple-boilerplate
 
-![rwsb.png](https://yadi.sk/i/n3gx6OsR3F2qJ6)
+![rwsb.png](https://github.com/RusFjord/react-webpack-simple-boilerplate/blob/master/rwsb.png)
 
 [Лицензия MIT](https://github.com/RusFjord/react-webpack-simple-boilerplate/blob/master/LICENSE-RU)
 
