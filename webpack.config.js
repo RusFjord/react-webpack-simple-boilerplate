@@ -48,7 +48,7 @@ module.exports = {
             },
             {
                 test:       /\.(png|jpg|svg|gif|ttf|eot|woff|woff2)$/,
-                loader:     'file?name=[name].[ext]?[hash]'
+                loader:     'file-loader?name=[name].[ext]?[hash]'
             }
         ]
     },
