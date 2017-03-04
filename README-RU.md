@@ -1,1 +1,1 @@
-[Лицензия MIT]: https://github.com/RusFjord/react-webpack-simple-boilerplate/blob/master/LICENSE-RU
+[Лицензия MIT](https://github.com/RusFjord/react-webpack-simple-boilerplate/blob/master/LICENSE-RU)
