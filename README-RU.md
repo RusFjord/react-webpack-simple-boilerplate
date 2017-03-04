@@ -37,4 +37,4 @@
  * [ESLint](http://eslint.org/)
 * Скринкасты
  * [Скринкаст по webpack](https://learn.javascript.ru/screencast/webpack)
- * [Скринкаст React-Redux](https://www.youtube.com/watch?v=BS7fRPWmNZo&list=PLIcAMDxr6tprSzqKmfhDiW00GWbDcs8lE)
+ * [Скринкаст React-Redux](http://monsterlessons.com/project/categories/redux)
