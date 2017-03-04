@@ -1,20 +1,35 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 import './app.scss';
 
-export default class App extends Component {
+class App extends Component {
+    addTrack() {
+        this.props.onAddTrack(this.trackInput.value);
+        this.trackInput.value = '';
+    }
+
     render() {
         return(
             <div>
-                <nav className='nav'>
-                    <ul>
-                        <li className='nav-item'>Первый</li>
-                        <li className='nav-item'>Второй</li>
-                    </ul>
-                </nav>
-                <header className='header'/>
-                <div>Привет Мир!!!</div>
+                <input type='text' ref={(input) => {this.trackInput = input}}/>
+                <button onClick={this.addTrack.bind(this)}>Добавить трек</button>
+                <ul>
+                    {this.props.testStore.map((track, index) =>
+                        <li key={index}>{track}</li>
+                    )}
+                </ul>
             </div>
         );
     }
 }
 
+export default connect(
+    state => ({
+        testStore: state
+    }),
+    dispatch => ({
+        onAddTrack: (trackName) => {
+            dispatch({ type: 'ADD_TRACK', payload: trackName})
+        }
+    })
+)(App);
