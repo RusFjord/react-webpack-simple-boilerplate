@@ -2,6 +2,7 @@
 
 const path = require('path');
 //const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 
 module.exports = {
@@ -16,7 +17,7 @@ module.exports = {
         filename: 'js/build.js',
         publicPath: '/'
     },
-    watch: true,
+    //watch: true,
     devServer: {
         //hot: true,
         contentBase: path.resolve('public/'),
@@ -47,7 +48,7 @@ module.exports = {
             },
             {
                 test:       /\.(png|jpg|svg|gif|ttf|eot|woff|woff2)$/,
-                loader:     'file?name=[name].[ext]?[hash]'
+                loader:     'file-loader?name=[name].[ext]?[hash]'
             }
         ]
     },
@@ -55,5 +56,6 @@ module.exports = {
         //new ExtractTextPlugin("./css/style.css?[hash]"),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
+        new HtmlWebpackPlugin({template: './frontend/index.html'})
     ]
 };
